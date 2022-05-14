@@ -1,16 +1,9 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React from "react";
 import style from "./Header.module.css";
+import { useUserContext } from "../../context/UserContext"
 
 export default function Header() {
-  const [userData, setUserData] = useState({});
-  useEffect(() => {
-    (async () => {
-      const res = await axios.get("https://assessment.api.vweb.app/user");
-      setUserData(res.data);
-    })();
-  }, []);
-  console.log(userData);
+    const { userData } = useUserContext();
   return (
     <div className={`${style.header}`}>
       <div>
