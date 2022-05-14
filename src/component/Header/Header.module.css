@@ -1,0 +1,15 @@
+.header{
+    height: 5.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.userProfile{
+    width: 3.5rem;
+    border-radius: 50%;
+}
+.profileSection{
+    display: flex;
+    align-items: center;
+
+}
