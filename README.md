@@ -1,3 +1,10 @@
+# ShowCase
+
+
+https://user-images.githubusercontent.com/75560307/168483078-85d87572-0b09-4baa-91bf-f1593630bf43.mp4
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
