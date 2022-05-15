@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useUserContext } from "../../context/UserContext";
 import { isUpcomingRide } from "../../utils/index";
 import { useFilter } from "../../context/FilterContext";
+import style from "./FutureRides.module.css";
 function FutureRides() {
   const [upComingRides, setUpComingRides] = useState([]);
   const { nearestRides } = useUserContext();

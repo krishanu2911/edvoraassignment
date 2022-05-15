@@ -1,4 +1,14 @@
 .navbar{
     display: flex;
+    background-color: #292929;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+.navLeft{
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
+}
+.navpill{
+    color: lightgray;
 }

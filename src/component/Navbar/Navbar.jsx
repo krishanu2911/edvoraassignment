@@ -5,15 +5,18 @@ import { FilterSection } from "../Filter/FilterSection"
 function Navbar() {
   return (
     <div className={`${style.navbar}`}>
-      <Link style={{ textDecoration: "none" }} to={"/"}>
-        <h1>Nearest Ride</h1>
+      <div className={`${style.navLeft}`}>
+       <Link style={{ textDecoration: "none" }} to={"/"}>
+        <h3 className={`${style.navpill}`}>Nearest Ride</h3>
       </Link>
       <Link style={{ textDecoration: "none" }} to={"/futurerides"}>
-        <h1>Future Ride</h1>
+        <h3 className={`${style.navpill}`}>Future Ride</h3>
       </Link>
       <Link style={{ textDecoration: "none" }} to={"/pastrides"}>
-        <h1>Past Ride</h1>
-      </Link>
+        <h3 className={`${style.navpill}`}>Past Ride</h3>
+      </Link> 
+      </div>
+      
       <FilterSection />
     </div>
   );
