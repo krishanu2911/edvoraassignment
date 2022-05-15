@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useUserContext } from "../../context/UserContext";
+import { useFilter } from "../../context/FilterContext"
 function FilterSection() {
+  const { filterDispatch, filterState } = useFilter();
   const { rideData } = useUserContext();
   const [stateCityData, setStateCityData] = useState([]);
   const [selectedState, setSelectedState] = useState("state");
@@ -39,6 +41,7 @@ function FilterSection() {
           const { city } = filteredStateWithCity.find(
             (item) => item.state === e.target.value
           );
+          filterDispatch({type: "STATE" , payload: e.target.value})
           setSelectedStateCity(city);
           setSelectedState(e.target.value);
         }}
@@ -51,7 +54,10 @@ function FilterSection() {
       <select
         name="stateoption"
         id=""
-        onChange={(e) => console.log(e.target.value)}
+        onChange={(e) => {
+          filterDispatch({type: "CITY" , payload: e.target.value})
+          console.log(e.target.value)
+        }}
       >
         <option value="City">City</option>
         {selectedStateCity.length &&
