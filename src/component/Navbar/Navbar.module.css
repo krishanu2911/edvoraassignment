@@ -12,3 +12,9 @@
 .navpill{
     color: lightgray;
 }
+.underline{
+    text-decoration: underline;
+}
+.notUnderline{
+    text-decoration: none;
+}

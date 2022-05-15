@@ -33,7 +33,6 @@ function FilterSection() {
       return [...acc, curr];
     }
   }, []);
-  console.log(selectedState);
   return (
     <div>
       { filterToggle ? <h3 onClick={() => setFilterToggle((prev) => !prev)} className={`${style.textColor}`}>Filter</h3> :
