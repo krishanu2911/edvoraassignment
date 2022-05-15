@@ -1,0 +1,38 @@
+.rideCardContainer{
+    /* width: 100%; */
+    background-color: #101010;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    margin-bottom: 1rem;
+}
+.textColor{
+    color: white;
+}
+.flex{
+    display: flex;
+}
+.flexCol{
+    display: flex;
+    flex-direction: column;
+}
+.rideCardRight{
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.gap{
+    gap: 1rem;
+}
+.pills{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: #292929;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.mapImg{
+    border-radius: 1rem;
+    margin-right: 3rem;
+}

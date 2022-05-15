@@ -2,8 +2,14 @@
 .App{
     font-family: 'Montserrat';
     min-height: 100vh;
+    background-color: #292929;
 }
-h1{
-    color: black;
+h1,h2,h3,h4{
     margin: 0;
+}
+hr{
+    margin: 0;
+    height: 1px;
+    background-color: white;
+    border: none;
 }

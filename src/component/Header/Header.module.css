@@ -2,7 +2,12 @@
     height: 5.5rem;
     display: flex;
     align-items: center;
+    background-color: #101010;
+    padding: 0 2rem;
     justify-content: space-between;
+}
+.headerText{
+    color: white;
 }
 .userProfile{
     width: 3.5rem;
@@ -11,5 +16,5 @@
 .profileSection{
     display: flex;
     align-items: center;
-
+    gap: 1rem;
 }
