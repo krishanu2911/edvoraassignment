@@ -2,6 +2,7 @@
 .App{
     font-family: 'Montserrat';
     min-height: 100vh;
+    background-color: #292929;
 }
 h1,h2,h3,h4{
     margin: 0;
