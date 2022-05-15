@@ -7,10 +7,10 @@ export default function Header() {
   return (
     <div className={`${style.header}`}>
       <div>
-        <h1>Edvora</h1>
+        <h1 className={`${style.headerText}`}>Edvora</h1>
       </div>
       <div className={`${style.profileSection}`}>
-        <h1>{userData?.name}</h1>
+        <h3 className={`${style.headerText}`}>{userData?.name}</h3>
         <img
           className={`${style.userProfile}`}
           src={userData.url}
