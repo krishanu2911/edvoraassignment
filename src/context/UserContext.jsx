@@ -56,7 +56,7 @@ const UserContextProvider = ({ children }) => {
 
 
   return (
-    <UserContext.Provider value={{ userData, nearestRides }}>{children}</UserContext.Provider>
+    <UserContext.Provider value={{ userData, nearestRides, rideData }}>{children}</UserContext.Provider>
   );
 };
 const useUserContext = () => useContext(UserContext);

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import style from "./Navbar.module.css"
+import style from "./Navbar.module.css";
+import { FilterSection } from "../Filter/FilterSection"
 function Navbar() {
   return (
     <div className={`${style.navbar}`}>
@@ -13,6 +14,7 @@ function Navbar() {
       <Link style={{ textDecoration: "none" }} to={"/pastrides"}>
         <h1>Past Ride</h1>
       </Link>
+      <FilterSection />
     </div>
   );
 }
