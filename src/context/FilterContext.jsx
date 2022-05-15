@@ -3,7 +3,7 @@ import { filterReducerFunction } from "../reducer/filterReducerFunction"
 const FilterContext = createContext();
 const FilterContextProvider = ({children}) => {
     const [filterState, filterDispatch] = useReducer(filterReducerFunction, {
-        stateSelected: "State",
+        stateSelected: "state",
         citySelected: "city"
       })
       console.log(filterState)
