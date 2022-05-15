@@ -23,7 +23,7 @@ function FutureRides() {
   console.log(filteredUpcomingRides);
   return (
     <div className={`${style.rideListingSection}`}>
-      {filteredUpcomingRides?.map((item) => {
+      {filteredUpcomingRides.length ? filteredUpcomingRides?.map((item) => {
         return (
           <div>
             <RideCard
@@ -38,7 +38,8 @@ function FutureRides() {
             />
           </div>
         );
-      })}
+      }):<h1>No upcoming Rides </h1>
+    }
     </div>
   );
 }

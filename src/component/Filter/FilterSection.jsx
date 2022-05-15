@@ -3,7 +3,7 @@ import { useUserContext } from "../../context/UserContext";
 import { useFilter } from "../../context/FilterContext";
 import style from "./FilterSection.module.css";
 function FilterSection() {
-  const { filterDispatch, filterState } = useFilter();
+  const { filterDispatch } = useFilter();
   const { rideData } = useUserContext();
   const [stateCityData, setStateCityData] = useState([]);
   const [selectedState, setSelectedState] = useState("state");

@@ -4,6 +4,8 @@ function filterReducerFunction (state, action)  {
             return{...state,stateSelected:action.payload,citySelected: "city"}
         case "CITY":
             return{...state,citySelected: action.payload}
+        default :
+            return state
     }
 }
 export { filterReducerFunction }

@@ -1,4 +1,5 @@
 .rideCardContainer{
+    /* width: 100%; */
     background-color: #101010;
     padding: 1rem;
     border-radius: 1rem;
@@ -27,6 +28,9 @@
     padding: 0.5rem;
     border-radius: 1rem;
     background-color: #292929;
+}
+.wrap{
+    flex-wrap: wrap;
 }
 .mapImg{
     border-radius: 1rem;
